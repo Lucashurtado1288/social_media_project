@@ -1,3 +1,9 @@
+
+
+################## PROCESSES ALL REQUESTS ########################
+####### URLs --> VIEWS --> MODELS --> DATABASE --> TEMPLATE ######
+
+
 from django.shortcuts import render, redirect
 from .forms import PostForm,ProfileForm, RelationshipForm
 from .models import Post, Comment, Like, Profile, Relationship
@@ -10,7 +16,8 @@ from django.http import Http404
 # Create your views here.
 
 # When a URL request matches the pattern we just defined, 
-# Django looks for a function called index() in the views.py file. 
+# Django looks for a function called index() in the views.py file.
+# Diplays homepage utilizing index.html
 
 def index(request):
     """The home page for Learning Log."""
