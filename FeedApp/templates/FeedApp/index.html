@@ -1,4 +1,4 @@
-{% extends "FeedApp/base.html" %}
+<!-- {% extends "FeedApp/base.html" %}
 
 {% block page_header %}
 <div class="jumbotron text-center bg-light shadow-sm">
@@ -8,4 +8,53 @@
 
     <a class="btn btn-lg btn-outline-primary" href="{% url 'users:register' %}" role="button">Join Now &raquo;</a>
 </div>
+{% endblock page_header %} -->
+
+
+{% extends "FeedApp/base.html" %}
+
+{% block page_header %}
+
+<div class="jumbotron text-center bg-light shadow-sm">
+
+    <h1 class="display-3 text-primary">
+        Feed
+    </h1>
+
+    <p class="lead">
+        Connect with friends, share memories,
+        post pictures, and stay updated with your network.
+    </p>
+
+    <hr class="my-4">
+
+    <p>
+        Join the community and start building your social network today.
+    </p>
+
+    <a class="btn btn-primary btn-lg" href="{% url 'users:registertn-lg" href="{% url 'users:login' %}" role="button">
+        Login
+
+        <h3>📸 Share Posts</h3>
+        <p>
+            Upload images and share updates with friends.
+        </p>
+</div>
+
+<div class="col-md-4">
+    <h3>💬 Comment</h3>
+    <p>
+        Join conversations and interact with other users.
+    </p>
+</div>
+
+<div class="col-md-4">
+    <h3>🤝 Connect</h3>
+    <p>
+        Send friend requests and grow your network.
+    </p>
+</div>
+
+</div>
+
 {% endblock page_header %}
