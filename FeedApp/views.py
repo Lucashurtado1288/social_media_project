@@ -268,7 +268,7 @@ def friends(request):
             user_profile.friends.add(relationship_obj.sender.user)
 
             # add the user to the friends list of the sender's profile
-            relationship_obj.sender.friends.add(relationship_obj.sender.user)
+            relationship_obj.sender.friends.add(user_profile.user)
 
     context = {'user_friends_profiles':user_friends_profiles,'user_relationships':user_relationships,
                'all_profiles':all_profiles,'request_received_profiles':request_received_profiles}
